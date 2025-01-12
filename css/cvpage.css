@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #631189;
+    color: white;
+}
+
+.nav {
+    background-color: white;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.navbar {
+    margin-right: 20px;
+}
+
+.navbar a {
+    color: #631189;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+.navbar a:hover {
+    background-color: #ffffff; 
+}
+h1 {
+    font-size:50px;}
+section {
+    margin: 20px;
+}
+
+.personal-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-photo {
+    width: 30%;
+    height: auto; 
+    margin-right: 20px;
+}
+
+.skills-content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+.certificates-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; }
+
+.skills-image{
+    width: 40%; 
+    height: auto;   
+    margin-right: 3%;
+}
+ .certificate-image {
+    width: 40%; 
+    height: auto;   
+    margin-left: 1%;
+    margin-bottom: 10%;
+    margin-right: 3%;
+}
+
+
+.info-skills, .cert-info {
+    flex: 1;
+    margin-bottom:10% ;
+}
+
+footer {
+    background-color: #631189;
+    color: white;
+    text-align: center;
+    padding:0;
+    position: fixed; 
+    width: 100%;
+    bottom: 0;
+}
+@media (max-width: 768px) {
+    .profile-photo, .skills-image, .certificate-image {
+        width: 50%;
+        margin-right: 1%;
+    }
+
+    .skills-content, .certificates-content {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 1%;
+    }
+
+    .info-skills, .cert-info {
+        text-align: left;
+        margin-left: 1%;
+        align-items: right;
+        font-size: small;
+    }
+
+    .navbar {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .navbar a {
+        padding: 5px;
+    }
+.skills-content, .certificates-content{
+    display: flex;
+    align-items: center;
+    flex-direction:row;  
+}
+    .skills-image, .certificate-image {
+        width: 50%;
+    }
+
+    .info-skills, .cert-info {
+        margin: 5px 0;
+        margin-bottom: 20%;
+        justify-content: center;
+        
+    }
+}
+
